@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	color: black;
+	margin: 0;
+	padding: 0;
+	background-color: white;
+}
+.outer{
+	text-align: center;
+}
+
+.page{
+	margin-top: 20px; 
+	max-width:1200px;
+	width: 100%;
+	display: inline-block;
+	height: 100%;
+}
+
+.toppage{
+	position: sticky;
+	top: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: flex-start;
+	height: 100px;
+	background-color: white;
+	z-index: 100;
+	opacity: .8;
+	
+}
+
+.logo{
+	max-width: 400px;
+	text-align: left;
+	
+}
+
+.logo_img{
+	width: 50%;
+	height: auto;
+	margin-top: 10px;
+	margin-left:-20px;
+	
+		
+}
+
+.navbar{
+	flex-grow: 1;
+	text-align: center;
+}
+
+.search{
+	max-width: 200px;
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh; 
+    text-align: center;   
+}
+
+.search div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.search a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.search_icons{
+	
+	width: 50%;
+	height: auto;
+	margin-top: 10px;
+	margin-left:20px;
+	
+}
+
+a{
+ 	color: black;
+	text-decoration: none;
+	font-weight: 500;
+	margin-right: 20px;
+	
+	
+}
+
+a:hover{
+	color: crimson;
+	
+}
+
+a:active {
+	color: darkgray;
+}
+
+.content{
+	font-weight: 700;
+	color: lightgray;
+	width: inherit;
+
+	
+}
+
+
+.tile{
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+	
+}
+
+.tilebg1{
+	background-image: url("img/0x0-Roadster_08.jpg");
+}
+
+.tilebg2{
+	background-image: url("img/ModelX_64.jpg");
+}
+
+.tilebg3{
+	background-image: url("img/ModelY_60.jpg");
+}
+
+.tilebg4{
+	background-image: url("img/Powerwall3_94.jpg");
+	
+}
+
+.tilebg5{
+	background-image: url("img/SolarPanels_81.jpg");
+}
+
+.tilebg6{
+	background-image: url("img/UniversalWallConnector_84.jpg");
+}
+
+.fontvar{
+	color: dimgrey;
+}
