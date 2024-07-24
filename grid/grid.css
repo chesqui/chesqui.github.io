@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+
+/* ==== GRID SYSTEM ==== */
+
+
+.parent-container {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.container {
+  width: 96%;
+  max-width: 1200px;
+  margin:auto;
+  color:white;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+  
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0% 0%;
+  min-height: 0.125rem;
+}
+
+
+.col-1 {
+    width: 8.33%;
+    background: #006ee6;
+	opacity: .5;
+  }
+
+  .col-2 {
+    width: 16.66%;
+	background: #0062cc;   
+	opacity: .5;
+  }
+
+  .col-3 {
+    width: 25%;
+	background:#006ee6;
+    
+  }
+
+  .col-4 {
+    width: 33.33%;
+    background: #0062cc;
+  }
+
+  .col-5 {
+    width: 41.67%;
+    background:#0055b3;
+  }
+
+  .col-6 {
+    width: 50%;
+    background:#004999;
+  }
+  
+
+  .col-7 {
+    width: 58.33%;
+    background:#003d80;
+  }
+
+  .col-8 {
+    width: 66.67%;
+    background: #003166;
+  }
+
+  .col-9 {
+    width: 75%;
+    background: #00254d;
+  }
+
+  .col-10 {
+    width: 83.33%;
+    background:#001833;
+  }
+
+  .col-11 {
+    width: 91.67%;
+    background:#000c19;
+  }
+
+  .col-12 {
+    width: 100%;
+    background:#000000;
+  }
+
+/* This is clearfix, clearing content after each row*/
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+div [class^="col"] {
+    height:100px;
+    border: 1px solid white;
+   
+}
