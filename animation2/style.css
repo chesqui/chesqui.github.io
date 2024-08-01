@@ -1,0 +1,172 @@
+body{
+	margin:0;
+	padding:0;
+   background-color: #999;
+   font-size: 40px;
+   font-family: sans-serif;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+
+
+
+.outer{
+  text-align: center;
+}
+
+.page{
+	position:relative;
+	margin-top:0px;
+	background-color: #FFF;
+   max-width:1200px;
+   width:100%;
+  height:100%;
+  display: inline-block;
+   text-align: left;
+   height:98vh;
+}
+
+/* Animation Box A */
+
+.a_box {
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  background-color: #777;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin: 50px;
+  display: inline-block;
+  animation: changeA 5s ease-out forwards;
+  animation-delay: 2s;
+}
+
+@keyframes changeA {
+  0% {
+    background-color: red;
+    border-radius: 100px;
+  }
+  50% {
+    background-color: green;
+    border-radius: 0;
+    transform: translate(200px, 0) scale(1.5);
+  }
+  100% {
+    background-color: blue;
+    border-radius: 100px;
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+/* Animation Box B */
+
+.b_box {
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  background-color: #555;
+  padding: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 50px;
+  display: inline-block;
+  animation: changeB 6s ease-in-out forwards;
+  animation-delay: 3s;
+}
+
+@keyframes changeB {
+  0% {
+    background-color: orange;
+    transform: scale(1) rotate(0deg);
+  }
+  30% {
+    background-color: yellow;
+    transform: scale(1.2) rotate(45deg);
+  }
+  60% {
+    background-color: pink;
+    transform: scale(0.8) rotate(-45deg);
+  }
+  100% {
+    background-color: purple;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+/* Animation Box C */
+
+.c_box {
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  background-color: #333;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 0;
+  margin: 50px;
+  display: inline-block;
+  animation: changeC 7s linear forwards;
+  animation-delay: 1s;
+}
+
+@keyframes changeC {
+  0% {
+    background-color: cyan;
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    background-color: magenta;
+    transform: translateX(100px) translateY(100px);
+  }
+  50% {
+    background-color: lime;
+    transform: translateX(-100px) translateY(100px);
+  }
+  75% {
+    background-color: coral;
+    transform: translateX(100px) translateY(-100px);
+  }
+  100% {
+    background-color: teal;
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes change{
+  
+  0% {
+    background-color: red;
+    border-radius: 100px;
+	transition
+  }
+  
+  50% {
+    background-color: green;
+    border-radius: 0px;
+    transform: translate(200px, 0px) scale(1.5,1.5);
+  
+ 
+  }
+  100% {
+    background-color:blue;
+    border-radius: 100px;
+    
+  }
+
+}
+
+
+
+
+
+
+
+/* animaitn 1 */
