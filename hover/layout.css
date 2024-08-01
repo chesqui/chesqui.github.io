@@ -1,0 +1,200 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	color: black;
+	margin: 0;
+	padding: 0;
+	background-color: white;
+}
+.outer{
+	text-align: center;
+}
+
+.page{
+	margin-top: 20px; 
+	max-width:1250px;
+	width: 100%;
+	display: inline-block;
+	height: 100%;
+}
+
+/* This is the navigation layout */
+.toppage{
+	position: sticky;
+	top: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: flex-start;
+	height: 100px;
+	background-color: white;
+	z-index: 100;
+	opacity: .8;
+	width: auto;
+	
+	
+}
+
+.logo{
+	max-width: 50%;
+	text-align: left;
+	padding-left: 30px;
+	
+}
+
+.logo_img{
+	width: 50%;
+	height: auto;
+	margin-top: 10px;
+	margin-left:-20px;
+	
+		
+}
+
+.navbar{
+	flex-grow: 1;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-around;
+	align-content: center;
+}
+
+.nav:hover{
+	animation-fill-mode: forwards;
+	animation-name: changescale;
+	animation-duration: .5s; 
+	animation-timing-function: ease-out;
+}
+
+.search{
+	max-width:20%;
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh; 
+    text-align: center;   
+}
+
+.search div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.search a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.search_icons{
+	
+	width: 50%;
+	height: auto;
+	margin-top: 10px;
+	margin-left:20px;
+	
+}
+
+a{
+ 	color: black;
+	text-decoration: none;
+	font-weight: 500;
+	margin-right: 20px;
+	
+	
+}
+
+a:hover{
+	color: crimson;
+	
+}
+
+a:active {
+	color: darkgray;
+}
+
+/* This is the components layout */
+
+.row {
+  position: relative;
+  width: 100%;
+  
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0% 0%;
+  min-height: 0.125rem;
+}
+
+/* Side Bar */
+.col-4 {
+    width: 33.33%;
+  }
+.side_bar{
+  height:100%;
+  overflow: auto;
+  margin-top:10px;
+  margin-bottom:10px;
+  text-align: left;
+  padding-left: 10px; 
+
+}
+
+.side_bar .section{
+   text-transform: uppercase;
+   font-weight: bold;
+}
+
+.side_bar img{
+	float: right;
+}
+
+/* [class^="side_bar"] element that starts with */
+div [class^="side_bar"]:first-of-type {
+    margin: 0px;
+   
+}
+
+div [class^="side_bar"]:last-of-type {
+    margin: 0px;
+   
+}
+
+/* Hero IMG */
+ .col-8 {
+    width: 66.67%;
+  }
+
+.hero_content{
+	font-size:28px;
+	text-align: center;
+}
+.hero_text_headline{
+	font-weight: bold;
+	font-size: 34px;
+}
+
+.hero_content img{
+	width:100%;
+}
+
+.hero_content:hover{
+	animation-fill-mode: forwards;
+	animation-name: changescale;
+	animation-duration: .5s; 
+	animation-timing-function: ease-out;
+}
+
+@keyframes changescale{
+	from {transform: scale(1,1)}
+	to {transform: scale(1.5,1.5)}
+}
