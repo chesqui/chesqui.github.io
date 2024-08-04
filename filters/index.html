@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Filters</title>
+
+		<style>
+     	.my_filter{
+ 			 -webkit-filter: opacity(50%); 
+      		filter: opacity(50%);
+     }
+
+    .my_filter:hover{
+      animation: 3s myfilteranimation forwards;
+    }
+
+     @keyframes myfilteranimation{
+	      100%{
+	       -webkit-filter: opacity(100%); 
+	        filter: opacity(100%);
+	       }
+     }
+
+	</style>
+</head>
+<body>
+
+<img class="my_filter" src="img/flower.jpg" width="1200" height="1500" alt="Flower"/>
+
+</body>
+</html>
